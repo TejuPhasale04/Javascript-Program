@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title> Array.splice() method adds and removes array elements </title>
+<script>
+    var a = new Array();
+       a[0] = "C" ; 
+       a[1] = "C++" ;
+       a[2] = "JAVA" ;
+       a[3] = "JavaScript" ;
+       a[4] = "VB.NET" ;
+       a[5] = "PHP"
+          document.write("Original Length =" + a.length + "<br>");
+             
+                   // At position 2, remove 2 items: 
+                    a.splice(2 , 2);
+                   // "java" and "javascript" will be removed......
+         document.write("New Length =" + a.length + "<br>");
+
+             for (var i = 0; i < a.length; i++) 
+             {
+          document.write (a[i]);
+             }
+
+             
+</script>
+
+</body>
+</html>

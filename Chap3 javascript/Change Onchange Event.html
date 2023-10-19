@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing attribute value dynamically Demo :</title>
+</head>
+   <script>
+       function change(element)
+          {
+            element.style.color = "Blue";
+            element.style.backgroundcolor = "Silver";
+          }
+   </script>
+<body>
+     <form action = "" method = "" name = "entry">
+         Country <input type = "text" name = "Cname" value = "Austrelia" onchange = "change(this)">  <br>
+         State <input type = "text" name = "Sname" value = "Queensland" onchange = "change(this)"> <br>
+          <input type = "button" name = "b1" value = "send"> <br>
+     </form>
+</body>
+</html>

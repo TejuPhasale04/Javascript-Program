@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluate Checkbox Selection Demo :</title>
+</head>
+    <script>
+        function show()
+          {
+            with(document.forms,frm1) 
+            {
+                if(c1.checked == true)
+                  {
+                     alert("C");
+                  }
+                if(c2.checked == true)
+                  {
+                     alert("C++");
+                  }
+                if(c3.checked == true)
+                  {
+                     alert("Java");
+                  }
+                if(c4.checked == true)
+                  {
+                     alert("JavaScript");
+                  }
+            }
+          }
+    </script>
+<body>
+    <form action = "" name = "frm1" method = "post">
+         <p>
+             <input type = "checkbox" name = "c1" value = "c"> C
+               <br>
+             <input type = "checkbox" name = "c2" value = "c++"> C++
+               <br>
+             <input type = "checkbox" name = "c3" value = "Java"> Java
+               <br>
+             <input type = "checkbox" name = "c4" value = "JavaScript"> JavaScript
+               <br>
+             <input type = "reset" name = "r1" value = "show" onclick = "show()">
+         </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeydown and Onkeyup Demo : </title>
+</head>
+    <script>
+        function down()
+         {
+            document.frm1.b1.value = "Key Down!"
+         }
+        function up()
+         {
+            document.frm1.b1.value = "Key Up!"
+         }
+    </script>
+<body>
+       <form action = "frm1">
+           <input type = "text" name = "t1" value = "" onkeydown = "down()" onkeyup = "up()">
+             <br>
+           <input type = "button" name = "b1" value = "press key">
+       </form>
+</body>
+</html>

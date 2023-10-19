@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Digits and non-digits Characters Demo</title>
+</head>
+    <script>
+         var p = /\D/;
+            function testMatch()
+              {
+                 var str = textfield.value;
+                   if(p.test(str))
+                      {
+                       alert("The string" + str + "Contains the digits");
+                      }
+                   else
+                      {
+                        alert("The string" + str + "does not contain digits")
+                      }
+              }
+    </script>
+<body>
+        <h2><p>Checking the availability of character in given range</p></h2>
+           Enter the String <input type = "text" id = "textfield">
+             <input type = "button" value = "Check" onclick = "testMatch()">
+             
+</body>
+</html>
